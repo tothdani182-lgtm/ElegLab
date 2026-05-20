@@ -1,14 +1,14 @@
 name: Build DEB
-on:
-  push:
-    branches:
-      - main
-      - master
+
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Build Tweak
         run: |
           mkdir -p build/DEBIAN
@@ -16,10 +16,11 @@ jobs:
           mkdir -p build/var/jb/Library/Widgets/Universal/ElegIsland
           cp var/jb/Library/Widgets/Universal/ElegIsland/Widget.html build/var/jb/Library/Widgets/Universal/ElegIsland/
           dpkg-deb --build build ElegIsland.deb
+
       - name: Commit DEB
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add ElegIsland.deb
-          git commit -am "Automated DEB Build" || exit 0
+          git commit -m "Automated DEB Build" || exit 0
           git push
