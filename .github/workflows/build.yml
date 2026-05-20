@@ -12,9 +12,9 @@ jobs:
       - name: Build Tweak
         run: |
           mkdir -p build/DEBIAN
-          cp DEBIAN/control build/DEBIAN/
+          cp ElegIsland_Csomag/DEBIAN/control build/DEBIAN/
           mkdir -p build/var/jb/Library/Widgets/Universal/ElegIsland
-          cp var/jb/Library/Widgets/Universal/ElegIsland/Widget.html build/var/jb/Library/Widgets/Universal/ElegIsland/
+          cp ElegIsland_Csomag/var/jb/Library/Widgets/Universal/ElegIsland/Widget.html build/var/jb/Library/Widgets/Universal/ElegIsland/
           dpkg-deb --build build ElegIsland.deb
 
       - name: Commit DEB
