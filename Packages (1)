@@ -1,0 +1,13 @@
+Package: com.tothdani182-lgtm.elegisland-iconfix
+Name: ElegIsland IconFix
+Version: 1.2
+Architecture: all
+Description: Kimásolja a valódi iOS ikonokat az ElegIsland widgethez.
+Maintainer: ElegLab
+Author: ElegLab
+Section: Utilities
+Filename: ElegIsland_IconFix_v1.2.deb
+Size: 970
+MD5sum: 89696d34b9a5995272dfe9ee27dceb8a
+SHA256: fef80b0e17dcce6849134239251fce5ed311d931571c374dcabfbb4aca609123
+
