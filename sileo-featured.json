@@ -1,0 +1,15 @@
+{
+  "class": "FeaturePage",
+  "title": "ElegLab",
+  "views": [
+    {
+      "class": "HeaderView",
+      "title": "Üdvözöllek az ElegLab-ben!",
+      "subtitle": "Kézzel készített elegáns widgetek"
+    },
+    {
+      "class": "MarkdownView",
+      "markdown": "Thank you for choosing ElegLab!"
+    }
+  ]
+}
