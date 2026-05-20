@@ -1,0 +1,10 @@
+```text
+    Package: com.tothdani182-lgtm.elegisland
+    Name: ElegIsland
+    Version: 1.0
+    Architecture: iphoneos-arm iphoneos-arm64
+    Description: Elegans trapez alaku Dynamic Island widget.
+    Maintainer: ElegLab
+    Author: ElegLab
+    Section: Widgets
+    ```
